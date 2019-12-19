@@ -26,6 +26,13 @@ include_once 'includes/header.php';
 				<input type="text" name="cargo" id="idade">
 				<label for="idade">Cargo</label>
 			</div>
+			
+			<div class="input-field col s12">
+				<input type="text" name="senha" id="senha">
+				<label for="senha">Senha</label>
+			</div>
+			
+			
 
 			<button type="submit" name="btn-cadastrar" class="btn"> Cadastrar </button>
 			<a href="index.php" class="btn green"> Lista de funcionários </a>
