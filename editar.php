@@ -36,6 +36,11 @@ endif;
 				<input type="text" value="<?php echo $dados['cargo'];?>" name="cargo" id="idade">
 				<label for="idade">Cargo</label>
 			</div>
+			
+			<div class="input-field col s12">
+				<input type="text" value="<?php echo $dados['senha'];?>" name="senha" id="senha">
+				<label for="senha">Senha</label>
+			</div>
 
 			<button type="submit" name="btn-editar" class="btn"> Atualizar</button>
 			<a href="index.php" class="btn green"> Lista de funcionários </a>
