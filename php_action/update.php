@@ -9,8 +9,9 @@ if(isset($_POST['btn-editar'])):
 	$sobrenome = mysqli_escape_string($connect, $_POST['nome']);
 	$email = mysqli_escape_string($connect, $_POST['data_nascimento']);
 	$idade = mysqli_escape_string($connect, $_POST['cargo']);
+	$senha = mysqli_escape_string($connect, $_POST['senha']);
 
-	$sql = "UPDATE funcionario SET cpf = '$nome', nome = '$sobrenome', data_nascimento = '$email', cargo = '$idade' WHERE cpf = '$nome'";
+	$sql = "UPDATE funcionario SET cpf = '$nome', nome = '$sobrenome', data_nascimento = '$email', cargo = '$idade', senha = '$senha' WHERE cpf = '$nome'";
 
 	if(mysqli_query($connect, $sql)):
 		$_SESSION['mensagem'] = "Atualizado com sucesso!";
