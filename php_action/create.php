@@ -18,8 +18,9 @@ if(isset($_POST['btn-cadastrar'])):
 	$sobrenome = clear($_POST['nome']);
 	$email = clear($_POST['data_nascimento']);
 	$idade = clear($_POST['cargo']);
+	$senha = clear($_POST['senha']);
 
-	$sql = "INSERT INTO funcionario(cpf, nome, data_nascimento, cargo) VALUES ('$nome', '$sobrenome', '$email', '$idade')";
+	$sql = "INSERT INTO funcionario(cpf, nome, data_nascimento, cargo, senha) VALUES ('$nome', '$sobrenome', '$email', '$idade', '$senha')";
 
 	if(mysqli_query($connect, $sql)):
 		$_SESSION['mensagem'] = "Cadastrado com sucesso!";
