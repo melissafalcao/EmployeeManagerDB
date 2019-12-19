@@ -1,9 +1,9 @@
 <?php
 // Conexão com banco de dados
-$servername = "localhost";
-$username = "root";
-$password = "";
-$db_name = "cadastro";
+$servername = "thzz882efnak0xod.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+$username = "aglg8idzf1hcszeq";
+$password = "vbodi6467kix674g";
+$db_name = "grvu35nzjoerjtbr";
 
 $connect = mysqli_connect($servername, $username, $password, $db_name);
 mysqli_set_charset($connect, "utf8");
