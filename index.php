@@ -14,8 +14,9 @@ include_once 'includes/message.php';
 				<tr>
 					<th>CPF:</th>
 					<th>Nome:</th>
-					<th>Data de Nascimento(ano/mes/dia):</th>
+					<th>Data de Nascimento(ano-mes-dia):</th>
 					<th>Cargo:</th>
+					<th>Senha:</th>
 				</tr>
 			</thead>
 
@@ -25,7 +26,6 @@ include_once 'includes/message.php';
 				$resultado = mysqli_query($connect, $sql);
                
                 if(mysqli_num_rows($resultado) > 0):
-
 				while($dados = mysqli_fetch_array($resultado)):
 				?>
 				<tr>
@@ -33,6 +33,7 @@ include_once 'includes/message.php';
 					<td><?php echo $dados['nome']; ?></td>
 					<td><?php echo $dados['data_nascimento']; ?></td>
 					<td><?php echo $dados['cargo']; ?></td>
+					<td><?php echo $dados['senha']; ?></td>
 					<td><a href="editar.php?id=<?php echo $dados['cpf']; ?>" class="btn-floating orange"><i class="material-icons">edit</i></a></td>
 
 					<td><a href="#modal<?php echo $dados['cpf']; ?>" class="btn-floating red modal-trigger"><i class="material-icons">delete</i></a></td>
@@ -84,4 +85,3 @@ include_once 'includes/message.php';
 // Footer
 include_once 'includes/footer.php';
 ?>
-
